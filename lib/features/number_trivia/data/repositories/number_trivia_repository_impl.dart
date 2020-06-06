@@ -51,7 +51,7 @@ class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
         final NumberTriviaModel localTrivia =
             await localDataSource.getLastNumberTrivia();
         return Right(localTrivia);
-      } on CatchException {
+      } on CacheException {
         return Left(CacheFailure());
       }
     }

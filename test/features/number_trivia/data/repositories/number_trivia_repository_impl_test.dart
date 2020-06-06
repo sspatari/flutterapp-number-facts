@@ -129,7 +129,7 @@ void main() {
           () async {
         // arrange
         when(mockLocalDataSource.getLastNumberTrivia())
-            .thenThrow(CatchException());
+            .thenThrow(CacheException());
         // act
         final result = await repository.getConcreteNumberTrivia(tNumber);
         // assert
@@ -215,7 +215,7 @@ void main() {
           () async {
         // arrange
         when(mockLocalDataSource.getLastNumberTrivia())
-            .thenThrow(CatchException());
+            .thenThrow(CacheException());
         // act
         final result = await repository.getRandomNumberTrivia();
         // assert
