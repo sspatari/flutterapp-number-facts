@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutterapp/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:flutterapp/features/number_trivia/presentation/bloc/number_trivia_bloc.dart';
 import 'package:flutterapp/features/number_trivia/presentation/widgets/widgets.dart';
 import 'package:flutterapp/injection_container.dart';

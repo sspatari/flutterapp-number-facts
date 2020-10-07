@@ -5,16 +5,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Flutter",
-      "type": "dart",
+      "name": "IPhone",
       "request": "launch",
-      "program": "lib/main.dart"
+      "type": "dart",
+      "deviceId": "iPhone SE (2nd generation)"
     },
     {
-      "name": "Dart: Run all Tests",
-      "type": "dart",
+      "name": "Android",
       "request": "launch",
-      "program": "./test/"
+      "type": "dart",
+      "deviceId": "SM G955F"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "All Devices",
+      "configurations": [
+        "IPhone",
+        "Android"
+      ]
     }
   ]
 }
